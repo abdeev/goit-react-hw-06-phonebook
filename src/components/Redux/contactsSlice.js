@@ -2,7 +2,13 @@ import { nanoid } from 'nanoid';
 import { createSlice } from '@reduxjs/toolkit';
 
 const contactInitialState = {
-  contacts: [],
+  contacts: [
+    { id: 'id-1', name: 'Pointer Event', number: '459-12-56' },
+    { id: 'id-2', name: 'Jack Richardson', number: '443-89-12' },
+    { id: 'id-3', name: 'Stella Artois', number: '645-17-79' },
+    { id: 'id-4', name: 'Phillp Morris', number: '227-91-26' },
+    { id: 'id-5', name: 'Klementina Zakruzhetsaya', number: '427-99-17' },
+  ],
 };
 
 const contactSlice = createSlice({
