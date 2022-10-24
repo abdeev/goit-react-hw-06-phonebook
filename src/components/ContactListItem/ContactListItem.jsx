@@ -1,7 +1,13 @@
+import { deleteContact } from 'components/Redux/contactsSlice';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import css from './ContactListItem.module.css';
 
-const ContactListItem = ({ contacts, onDelete }) => {
+const ContactListItem = ({ contacts }) => {
+  const dispatch = useDispatch();
+  const onDelete = id => {
+    dispatch(deleteContact(id));
+  };
   return (
     <>
       {contacts.map(contact => (
