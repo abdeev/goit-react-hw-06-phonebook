@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { contactReducer } from './contactsSlice';
-import { filterReducer } from './filterSlice';
+import { contactReducer } from './Slicies/contactsSlice';
+import { filterReducer } from './Slicies/filterSlice';
 import {
   persistStore,
   FLUSH,

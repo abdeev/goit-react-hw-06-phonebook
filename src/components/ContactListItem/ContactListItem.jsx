@@ -1,4 +1,4 @@
-import { deleteContact } from 'components/Redux/contactsSlice';
+import { deleteContact } from 'Redux/Slicies/contactsSlice';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import css from './ContactListItem.module.css';

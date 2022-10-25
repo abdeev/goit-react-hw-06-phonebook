@@ -1,5 +1,5 @@
-import { addContact } from 'components/Redux/contactsSlice';
-import { contactSelector } from 'components/Redux/selectors';
+import { addContact } from 'Redux/Slicies/contactsSlice';
+import { contactSelector } from 'Redux/selectors';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import css from './ContactForm.module.css';
